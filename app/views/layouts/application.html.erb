@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Testapp</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div style="text-align:center;">
+<%= link_to 'Home', :controller => :application, :action => :index  %>
+
+<%= link_to 'Municipalities', municipalities_path %>
+
+<%= link_to 'Areas', areas_path %>
+
+<%= link_to 'Users', users_path %>
+</div>
+<%= yield %>
+
+</body>
+</html>

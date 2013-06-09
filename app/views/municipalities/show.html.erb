@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @municipality.id %>
+  
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @municipality.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_municipality_path(@municipality) %> |
+<%= link_to 'Back', municipalities_path %>
